@@ -4,3 +4,5 @@ from django.shortcuts import render,redirect
 def index(request):
     return render(request , 'user.html')
 
+def servicelist(request):
+    return render(request , 'serviceList.html')
