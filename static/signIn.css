@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    box-sizing: border-box;
+}
+html,body
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* to align horizontally and vertically in center */
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+.container{
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 60%;
+    height: 73%;
+    border-radius: 50px;
+    
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    /* overflow: hidden; */
+    /* border: 10px solid black; */
+}
+
+.left{
+    /* black opacity effect ! */
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/left\ image\ sign\ in.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip:padding-box;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    
+}
+.right{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/right\ image-Sign\ in.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+}
+.login{
+    background:linear-gradient( rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    padding-left: 20px;
+    border-radius: 66px;
+}
+.heading{
+    text-align: center;
+    font-family: Tangerine;
+    font-size: 35px;
+    font-weight:500;
+
+}
+.item2{
+    text-align: left;
+    font-family:Carrois Gothic SC ;
+    font-size: larger;
+    margin: 20px 0 0 0;
+}
+.label1{
+    font-family:  Calibri;
+    font-weight: 100;
+    font-size: smaller; 
+    font-weight:500 ;
+    position: relative;
+    top: 40px;
+}
+.username{
+    width: 200px;
+    position: relative;
+    top: 25px;
+    padding: 4px;
+    font-family: calibri;
+    font-size:  14.66px;
+    font-weight:normal;
+    border-radius: 6.28px;
+    border: none;
+    outline: none;
+
+}
+.username:hover{
+    background-color: #D9D9D9;
+}
+.username[type="text"]:focus{
+    background-color:#D9D9D9;
+}
+/* .input1::placeholder{
+    font-family: calibri;
+    font-weight: normal;
+} */
+.label2{
+    font-family:  Calibri;
+    font-weight: 100;
+    font-size: smaller; 
+    font-weight:500 ;
+
+    position: relative;
+    top: 50px;
+}
+.password{
+    width: 200px;
+    position: relative;
+    top: 53px;
+    padding: 4px;
+    padding: 4px;
+    font-family: calibri;
+    font-size:  14.66px;
+    font-weight:normal;
+    border-radius: 6.28px;
+    border: none;
+    outline: none;
+
+}
+.password[type=text]:focus{
+    background-color: #D9D9D9;
+}
+.password:hover{
+    background-color: #D9D9D9;
+}
+#button{
+    background-color: #1E6AC3;
+    color: white;
+    font-family: calibri;
+    padding: 4px;
+    width: 80px;
+    border-radius: 10px;
+    position: relative;
+    top: 65px;
+    border: none;
+    outline: none;
+    display: block;
+}
+#button:hover{
+    background-color: #023c7d;
+    transition: all 0.3s;
+}
+
+#new-account{
+    text-decoration: none;
+    color: white;
+    font-family: calibri;
+    font-size: 12px;
+    font-weight: lighter;
+    position: relative;
+    top: 65px;
+    cursor: pointer;
+
+    border-radius: 7px;
+}
+#new-account:hover{
+    display: inline-block;
+    background:linear-gradient( rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+    color: black;
+    padding: 1px 4px 1px 4px;
+    transition: all .2s;
+
+}
+
+#orloginwith{
+    text-align: center;
+    font-family: calibri;
+    font-size: 14.66px;
+
+    position: relative;
+    top: 100px;
+}
+.loginoptioncontainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.loginoption{
+    display: flex;
+    position: absolute;
+    width: 150px;
+    top: 365px;
+    justify-content: space-around;
+}
+.loginoption>a{
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+}
+.loginoption>a:hover{
+    opacity:1 ;
+    transition: .5s ;
+}
+
+
+@media(max-width:500px){
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .login{
+        background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/right\ image-Sign\ in.png) ;
+    }
+}

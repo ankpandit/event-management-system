@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    {% load static %}
+    <link rel="stylesheet" href={% static "NavBarStyle.css" %}>
+    {% block link %}{% endblock link %}
+</head>
+<body>
+    {% comment %} <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label for="" class="logo">Logo</label>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" class="">Services</a></li>
+            <li><a href="#" class="">About</a></li>
+            <li><a href="#" class="">Contact</a></li>
+            <li><a href="#" class="">Feedback</a></li>
+        </ul>
+    </nav>
+    <section></section> {% endcomment %}
+
+    <nav class ="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">EventSpark</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu"
+            >
+                <li class="navbar__btn">
+                    <a href="/signin" class="button">Sign Up</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/about" class="navbar__links">About Us</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Services</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src={% static "NavbarJs.js" %}></script>
+    {% block body %}{% endblock body %}
+</body>
+</html>
